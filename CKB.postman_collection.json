@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "665b404b-2e65-48f7-bf02-30806a5d555a",
+		"name": "CKB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LIST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2006/api/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2006",
+					"path": [
+						"api",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"kode_barang\": \"LAPTOP-01\",\n    \"kondisi\": \"baru\",\n    \"lokasi\": \"1\",\n    \"qty\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2006/api/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2006",
+					"path": [
+						"api",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EDIT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"1\",\n    \"kode_barang\": \"LAPTOP-01\",\n    \"kondisi\": \"baru\",\n    \"lokasi\": \"1\",\n    \"qty\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2006/api/edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2006",
+					"path": [
+						"api",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2006/api/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2006",
+					"path": [
+						"api",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
